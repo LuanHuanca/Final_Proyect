@@ -4,20 +4,24 @@ import InputContainer from '../Componentes/Profile Screen/InputContainer.jsx'
 import ImageHeader from '../Componentes/Profile Screen/ImageHeader.jsx'
 import Title from '../Componentes/Profile Screen/Title.jsx'
 import Button from '../Componentes/Profile Screen/Button.jsx'
+import Text from '../Componentes/Profile Screen/Text'
 
 const Register = () => {
   return (
     <div >
         <ImageHeader/>
         <Title title={"REGISTRO"} context={"Llene los siguientes datos"}/>
-        <h4 className='container-text'>Nombre Completo</h4>
+        <Text texto={"Nombre Completo"}/>
         <InputContainer type={"text"} shadow={"Josue Romay Torrejon"}/>
-        <h4 className='container-text'>Email</h4>
+        <Text texto={"Email"}/>
         <InputContainer type={"text"} shadow={"example@gmail.com"}/>
-        <h4 className='container-text'>Contraseña</h4>
+        <Text texto={"Contraseña"}/>
         <InputContainer type={"password"} shadow={"Introduce tu contraseña"}/>
         <Button name={"Crear Cuenta"}/>
-        <h5 className='text-h5'>Ya Tienes una Cuenta? Inicia Sesion</h5>
+        <h5 className='text-h5'>
+            Ya Tienes una Cuenta?
+            <a href='http://localhost:5173/'>Inicia Sesion</a>
+        </h5>
     </div>
   )
 }

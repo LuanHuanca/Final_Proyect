@@ -4,12 +4,6 @@
     background-image: radial-gradient(at 20px 10px,red,yellow);
     color: black;
 }
-.container-text{
-    font-size: 18px;
-    padding-left: 40px;
-    padding: 0 0 0px 30px;
-    margin: 10px;
-}
 
 .text-h5{
     display: flex;
@@ -19,4 +13,8 @@
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
+}
+
+.text-h5 a{
+    color: red;
 }
