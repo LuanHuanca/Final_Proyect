@@ -1,6 +1,6 @@
 .details-container {
     margin: 10px;
-    height: 80px;
+    height: 300px;
     align-items: center;
 }
 .details-container input{
@@ -19,7 +19,3 @@
     display: flex;
 }
 
-div img{
-    height: 100px;
-    width: 100%;
-}

@@ -5,11 +5,11 @@ import State from '../Componentes/State'
 import Button from '../Componentes/Profile Screen/Button'
 import { NavLink } from 'react-router-dom'
 import "./Details.css"
+import InputContainer from '../Componentes/Profile Screen/InputContainer'
 
 const Details = () => {
   return (
-    <div>
-        <ImageHeader/>
+    <div> 
         <div className="details-header">
             <State state="Detalles"/>
             <State state="Ubicacion de las mesas"/>
@@ -17,13 +17,10 @@ const Details = () => {
         </div>
         
         <div className="details-container">
-            <span>Hora:</span>
-            <input type='time'></input>
-            <span>Fecha:</span>
-            <input type='date'></input>
+          <InputContainer title={"Hora"} type={"time"} shadow={""}/>
+          <InputContainer title={"Fecha"} type={"date"} shadow={""}/>
         </div>
-        <NavLink to={"/confirmeS"} ><Button name="Aceptar"/></NavLink>
-        <NavBar/>
+        <NavLink to={"/confirme"} ><Button name="Aceptar"/></NavLink>
     </div>
   )
 }

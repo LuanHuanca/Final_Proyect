@@ -1,0 +1,16 @@
+div
+
+.reserve-container {
+    margin: 10px;
+    height: 80px;
+    align-items: center;
+}
+
+.reserve-header{
+    display: flex;
+}
+
+div img{
+    height: 150px;
+    width: 100%;
+}

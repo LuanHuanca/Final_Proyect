@@ -1,10 +1,19 @@
 .container{
-    display: flex;
     justify-content: center;
+    
+}
+.container span{
+    font-family: 'Inter';
+    font-size: 20px;
+    line-height: 5px;
+    border: #000 ;
+    position: relative;
+    left: 40px;
+    font-weight: bold;
 }
 
 .input-container{
-    width: 70%;
+    width: 90%;
     height: 47px;
     background: #272727;
     margin: 10px;
@@ -24,5 +33,5 @@
     /* El outline es para desaparecer el borde al seleccionar el input  */
     outline: none;
     background-color: transparent;  
-    color: #000;
+    color: #fcfcfc;
 }

@@ -1,13 +1,7 @@
-.confirme-container {
+.reserved-container{
     margin: 10px;
     height: 300px;
     display: block;
     align-items: center;
     overflow-y: scroll;
-
-}
-
-
-.confirme-header{
-    display: flex;
 }

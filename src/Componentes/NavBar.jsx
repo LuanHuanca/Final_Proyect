@@ -8,10 +8,10 @@ import "./NavBar.css"
 const NavBar = () => {
   return (
     <div className='navbar-container'>
-        <NavLink><Icono name="Inicio" icon="lucide:home" /></NavLink>
+        <NavLink to={"/"}><Icono name="Inicio" icon="lucide:home" /></NavLink>
         <NavLink><Icono name="Reseñas" icon="lucide:mails" /></NavLink>
-        <NavLink><Icono name="Reservas" icon="humbleicons:documents" /></NavLink>
-        <NavLink><Icono name="Perfil" icon="octicon:person-16" /></NavLink>
+        <NavLink to={"/reserved"}><Icono name="Reservas" icon="humbleicons:documents" /></NavLink>
+        <NavLink to={"/register"}><Icono name="Perfil" icon="octicon:person-16" /></NavLink>
     </div>
   )
 }

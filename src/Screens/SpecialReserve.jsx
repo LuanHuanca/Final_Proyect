@@ -1,15 +1,12 @@
 import React from 'react'
-import ImageHeader from '../Componentes/Profile Screen/ImageHeader'
-import NavBar from '../Componentes/NavBar'
 import State from '../Componentes/State'
-import "./SpecialReserve.css"
 import Button from '../Componentes/Profile Screen/Button'
 import { NavLink } from 'react-router-dom'
+import "./SpecialReserve.css"
 
 const SpecialReserve = () => {
   return (
     <div>
-        <ImageHeader/>
         <div className="reserve-header">
             <State state="Tipo de Evento"/>
             <State state="Detalles"/>
@@ -31,7 +28,6 @@ const SpecialReserve = () => {
             </select>
         </div>
         <NavLink to={"/details"}><Button name="Aceptar"/></NavLink>
-        <NavBar/>
     </div>
   )
 }
