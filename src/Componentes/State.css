@@ -1,0 +1,11 @@
+.state-container{
+    background-color: #CD3131;
+    color: #FFFFFF;
+    margin: 5px;
+    border-color: #000000;
+    width: 50%;
+    height: 65px;
+    font-size: 17px;
+    text-align: center;
+    border: 1px solid #000;
+}

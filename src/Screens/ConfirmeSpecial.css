@@ -1,0 +1,26 @@
+.confirme-container {
+    margin: 10px;
+    height: 80px;
+    align-items: center;
+}
+.confirme-container input{
+    width: 80%;
+    height: 25px;
+    margin: 5px;
+}
+
+.confirme-container span{
+    width: 10%;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.confirme-header{
+    display: flex;
+}
+
+div img{
+    height: 100px;
+    width: 100%;
+}

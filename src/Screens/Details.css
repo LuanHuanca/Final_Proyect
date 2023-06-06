@@ -1,0 +1,25 @@
+.details-container {
+    margin: 10px;
+    height: 80px;
+    align-items: center;
+}
+.details-container input{
+    width: 80%;
+    height: 30px;
+    margin: 7px;
+}
+
+.details-container span{
+    width: 10%;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.details-header{
+    display: flex;
+}
+
+div img{
+    height: 100px;
+    width: 100%;
+}
