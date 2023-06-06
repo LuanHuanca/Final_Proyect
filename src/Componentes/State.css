@@ -8,4 +8,7 @@
     font-size: 17px;
     text-align: center;
     border: 1px solid #000;
+    display: grid;
+    place-items: center;
+
 }

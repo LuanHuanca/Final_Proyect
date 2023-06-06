@@ -11,8 +11,8 @@ const Details = () => {
   return (
     <div> 
         <div className="details-header">
+            <State state="Tipo de Evento"/>
             <State state="Detalles"/>
-            <State state="Ubicacion de las mesas"/>
             <State state="Confirmacion"/>
         </div>
         
