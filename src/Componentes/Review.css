@@ -1,0 +1,43 @@
+.review-container{
+    display: flex;
+    background-color: #FFFFFF;
+    margin: 10px;
+    border-radius: 7px;
+    height: auto;
+    position: relative;
+}
+
+
+.review-container img{
+    width: 25px;
+    height: 25px;
+    border-radius: 9px;
+    margin: 5px;
+}
+
+.review-container span{
+    display: block;
+    margin: 4px;
+    
+}
+
+.user{
+    font-size: 12px;
+    color: #000000;
+    width: 100%;
+}
+
+.date{
+    font-size: 11px;
+    color: #979797;
+}
+
+.description{
+    font-size: 14px;
+    color: #000000;
+    position: relative;
+    font-weight: 500;
+    bottom: 0px;
+    left: -25px;
+    padding-bottom: 10px;
+}

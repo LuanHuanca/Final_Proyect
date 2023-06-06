@@ -12,3 +12,7 @@
     border: 2px solid #000;
     border-radius: 16px;
 }
+
+.button-container button:active{
+    background-color: orange;
+}

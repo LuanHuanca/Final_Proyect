@@ -12,6 +12,7 @@ import SpecialReserve from './Screens/SpecialReserve.jsx'
 import Details from './Screens/Details.jsx'
 import ConfirmeSpecial from './Screens/ConfirmeSpecial.jsx'
 import Reserve from './Screens/Reserve.jsx'
+import Reviews from './Screens/Reviews'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -26,6 +27,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route  path='/details' element={<Details/>}/>
         <Route  path='/confirme' element={<ConfirmeSpecial/>}/>
         <Route  path='/reserved' element={<Reserve/>}/>
+        <Route  path='/reviews' element={<Reviews/>}/>
       </Routes>
     <NavBar/>
     </BrowserRouter>

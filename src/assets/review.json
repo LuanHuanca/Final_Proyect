@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "user": "Tobey Maguire",
+        "imgsrc": "/static/image/1.jpg",
+        "date": "Hace 5 dias",
+        "description": "Terrible xq? xq yo lo digo"
+    },
+    {
+        "id": 2,
+        "user": "HomosecualJoxxx",
+        "imgsrc": "/static/image/2.jpg",
+        "date": "Hace 10 dias",
+        "description": "Me gusto la atencion del camarero 7w7"
+    },
+    {
+        "id": 3,
+        "user": "Luan",
+        "imgsrc": "/static/image/3.jpg",
+        "date": "Hace 2 segundos",
+        "description": "Me gusta tocar webos en el avion"
+    },
+    {
+        "id": 4,
+        "user": "Mario",
+        "imgsrc": "/static/image/4.jpg",
+        "date": "Hace 10 meses",
+        "description": "Me gustan los hongos"
+    },
+    {
+        "id": 5,
+        "user": "User X",
+        "imgsrc": "/static/image/5.jpg",
+        "date": "Hace 1 siglo",
+        "description": "Comentario serio... me gusto la comida, tiene bonitos hambientes, la atencion es una de las mejores que tuve y de hecho no tengo ninfuna queja pero madre mia que linda la recepcionsita uwu"
+    }
+]
