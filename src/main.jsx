@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import Login from './Screens/Login.jsx'
 import Register from './Screens/Register.jsx'
 import NavBar from './Componentes/NavBar.jsx'
-
+import Profile from './Screens/Profile.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -17,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route  path='/' element={<Login/>}  />
         <Route  path='/register' element={<Register/>}  />
         <Route  path='*' element={<NotFound />}  />
+        <Route  path='/profile' element={<Profile/>}  />
 
       </Routes>
       <NavBar/>
