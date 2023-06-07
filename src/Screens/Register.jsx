@@ -1,27 +1,23 @@
 import React from 'react'
 import './Register.css'
-import InputContainer from '../Componentes/Profile Screen/InputContainer.jsx'
-import ImageHeader from '../Componentes/Profile Screen/ImageHeader.jsx'
-import Title from '../Componentes/Profile Screen/Title.jsx'
-import Button from '../Componentes/Profile Screen/Button.jsx'
+import InputContainer from '../Componentes/InputContainer.jsx'
+import Title from '../Componentes/Title.jsx'
+import Button from '../Componentes/Button.jsx'
+import { NavLink } from 'react-router-dom'
 import Text from '../Componentes/Profile Screen/Text'
 
 const Register = () => {
   return (
     <div >
-        <ImageHeader/>
         <Title title={"REGISTRO"} context={"Llene los siguientes datos"}/>
-        <Text texto={"Nombre Completo"}/>
+        <h4 className='container-text'>Nombre Completo</h4>
         <InputContainer type={"text"} shadow={"Josue Romay Torrejon"}/>
-        <Text texto={"Email"}/>
+        <h4 className='container-text'>Email</h4>
         <InputContainer type={"text"} shadow={"example@gmail.com"}/>
-        <Text texto={"Contraseña"}/>
+        <h4 className='container-text'>Contraseña</h4>
         <InputContainer type={"password"} shadow={"Introduce tu contraseña"}/>
         <Button name={"Crear Cuenta"}/>
-        <h5 className='text-h5'>
-            Ya Tienes una Cuenta?
-            <a href='http://localhost:5173/'>Inicia Sesion</a>
-        </h5>
+        <h5 className='text-h5'>Ya Tienes una Cuenta? Inicia Sesion</h5>
     </div>
   )
 }
