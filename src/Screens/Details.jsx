@@ -1,11 +1,9 @@
 import React from 'react'
-import ImageHeader from '../Componentes/Profile Screen/ImageHeader'
-import NavBar from '../Componentes/NavBar'
 import State from '../Componentes/State'
-import Button from '../Componentes/Profile Screen/Button'
+import Button from '../Componentes/Button'
 import { NavLink } from 'react-router-dom'
 import "./Details.css"
-import InputContainer from '../Componentes/Profile Screen/InputContainer'
+import InputContainer from '../Componentes/InputContainer'
 
 const Details = () => {
   return (

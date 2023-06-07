@@ -1,8 +1,8 @@
 import React from 'react'
 import './Register.css'
-import InputContainer from '../Componentes/Profile Screen/InputContainer.jsx'
-import Title from '../Componentes/Profile Screen/Title.jsx'
-import Button from '../Componentes/Profile Screen/Button.jsx'
+import InputContainer from '../Componentes/InputContainer.jsx'
+import Title from '../Componentes/Title.jsx'
+import Button from '../Componentes/Button.jsx'
 import { NavLink } from 'react-router-dom'
 
 const Register = () => {

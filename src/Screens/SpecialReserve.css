@@ -1,9 +1,18 @@
-div
+.reserve-container{
+    text-align: center;
+    
+}
+.reserve-container select{
+    background-color: #A93528;
+    margin: 5px;
+    text-align: center;
+    width: 50%;
+    height: 30px;
+    font-size: 16px;
+}
 
-.reserve-container {
-    margin: 10px;
-    height: 80px;
-    align-items: center;
+.reserve-container select option{
+    background-color: #D9D9D9;
 }
 
 .reserve-header{
@@ -11,6 +20,6 @@ div
 }
 
 div img{
-    height: 150px;
-    width: 100%;
+    margin: 5px;
+    width: 95%;  
 }

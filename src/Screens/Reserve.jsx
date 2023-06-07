@@ -1,8 +1,7 @@
 import React from 'react'
 import State from '../Componentes/State'
-import InputContainer from '../Componentes/Profile Screen/InputContainer'
 import { NavLink } from 'react-router-dom'
-import Button from '../Componentes/Profile Screen/Button'
+import Button from '../Componentes/Button'
 import './Reserve.css'
 
 const Reserve = () => {
@@ -10,13 +9,9 @@ const Reserve = () => {
     <div>
         <State state="Confirmacion"/>
         <div className="reserved-container">
-          <InputContainer title={"Tipo de evento"} type={"text"} shadow={""}/>
-          <InputContainer title={"Personas"} type={"Number"} shadow={""}/>
-          <InputContainer title={"Hora"} type={"time"} shadow={""}/>
-          <InputContainer title={"Fecha"} type={"date"} shadow={""}/>
-          <InputContainer title={"Mesa:"} type={"text"} shadow={""}/>
+          <span>No tiene reservas hechas</span>   
         </div>
-        <NavLink to={"/reserve"}><Button name="Editar"/></NavLink>
+        <NavLink to={"/reserve"}><Button name="Reservar"/></NavLink>
     </div>
   )
 }

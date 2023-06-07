@@ -8,7 +8,7 @@ const ImageHeader = () => {
         <img src='/static/image/Logo.png' />
         <div className='text-container'>
             <Icon icon="solar:map-point-outline" />
-            <a href='https://goo.gl/maps/anhxK26x5H5vRsa98'>Av. Arce #2549, La Paz, Bolivia</a>
+            Av. Arce #2549, La Paz, Bolivia
         </div>
     </div>
   )
