@@ -9,6 +9,7 @@ import Home from './Screens/Home.jsx'
 import ImageHeader from './Componentes/ImageHeader.jsx'
 import NavBar from './Componentes/NavBar.jsx'
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ImageHeader/>
