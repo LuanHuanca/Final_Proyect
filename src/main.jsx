@@ -8,12 +8,6 @@ import Register from './Screens/Register.jsx'
 import Home from './Screens/Home.jsx'
 import ImageHeader from './Componentes/ImageHeader.jsx'
 import NavBar from './Componentes/NavBar.jsx'
-import SpecialReserve from './Screens/SpecialReserve.jsx'
-import Details from './Screens/Details.jsx'
-import ConfirmeSpecial from './Screens/ConfirmeSpecial.jsx'
-import Reserve from './Screens/Reserve.jsx'
-import Reviews from './Screens/Reviews'
-import Profile from './Screens/Profile.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
