@@ -1,6 +1,6 @@
 import React from 'react'
-import ImageHeader from '../Componentes/Profile Screen/ImageHeader'
-import ProfileImage from '../Componentes/Profile Screen/ProfileImage'
+import ProfileImage from '../Componentes/ProfileImage'
+import ImageHeader from '../Componentes/ImageHeader'
 
 const Profile = () => {
   return (

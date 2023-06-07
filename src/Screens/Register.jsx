@@ -4,7 +4,6 @@ import InputContainer from '../Componentes/InputContainer.jsx'
 import Title from '../Componentes/Title.jsx'
 import Button from '../Componentes/Button.jsx'
 import { NavLink } from 'react-router-dom'
-import Text from '../Componentes/Profile Screen/Text'
 
 const Register = () => {
   return (
