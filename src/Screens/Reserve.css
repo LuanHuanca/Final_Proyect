@@ -1,0 +1,7 @@
+.reserved-container{
+    margin: 10px;
+    height: 80%;
+    display: block;
+    align-items: center;
+    overflow-y: scroll;
+}

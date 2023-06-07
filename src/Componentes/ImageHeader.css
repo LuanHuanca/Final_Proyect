@@ -1,14 +1,11 @@
 .image-container {
-    background-color: #c71e1b;
     width: 100%;
 }
 
 .image-container img{
     display: flex;    
-    justify-content: center;
-    width: 90%;
-    height: 176px;
-    padding: 10px 20px 0 20px;
+    
+    width: 100%;
 }
 
 .text-container{
