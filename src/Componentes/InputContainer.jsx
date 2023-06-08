@@ -4,7 +4,7 @@ import './InputContainer.css'
 const InputContainer = ({title, type, shadow}) => {
   return (
     <div className='container'>
-      <span>{title}</span>
+      <h4>{title}</h4>
       <div className='input-container'>
         <input type={type} placeholder={shadow}/>
       </div>
