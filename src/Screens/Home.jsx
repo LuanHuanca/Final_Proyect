@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div>
         <NavLink to={"/reserve"}><Button name="Special"/></NavLink>
-        <Button name="General"/>
+        <NavLink to={"/greserve"}><Button name="General"/></NavLink>
     </div>
   )
 }

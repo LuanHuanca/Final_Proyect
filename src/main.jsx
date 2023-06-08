@@ -14,6 +14,9 @@ import ConfirmeSpecial from './Screens/ConfirmeSpecial.jsx'
 import Reserve from './Screens/Reserve.jsx'
 import Reviews from './Screens/Reviews'
 import ProfileScreen from './Screens/ProfileScreen'
+import GeneralReserve  from './Screens/GeneralReserve.jsx'
+import GenDetails  from './Screens/GenDetails.jsx'
+import GenConfirm from './Screens/GenConfirm'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -30,6 +33,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route  path='/reserved' element={<Reserve/>}/>
         <Route  path='/reviews' element={<Reviews/>}/>
         <Route  path='/profile' element={<ProfileScreen/>}/>
+        <Route  path='/greserve' element={<GeneralReserve/>}/>
+        <Route  path='/gdetails' element={<GenDetails/>}/>
+        <Route  path='/gconfirm' element={<GenConfirm/>}/>
       </Routes>
     <NavBar/>
     </BrowserRouter>

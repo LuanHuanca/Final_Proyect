@@ -1,0 +1,23 @@
+
+.g-details {
+    margin: 10px;
+    height: 70%;
+    align-items: center;
+    display: block;
+}
+.g-details input{
+    width: 80%;
+    height: 30px;
+    margin: 7px;
+}
+
+.g-details span{
+    width: 10%;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.general-details-header{
+    display: flex;
+}
+

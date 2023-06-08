@@ -1,0 +1,27 @@
+.general-reserve-list{
+    text-align: center;
+}
+
+.general-reserve-list select{
+    background-color: #A93528;
+    margin: 5px;
+    text-align: center;
+    width: 50%;
+    height: 30px;
+    font-size: 16px;
+}
+
+.general-reserve-list select option{
+    background-color: #D9D9D9;
+}
+
+.general-reserve-header{
+    display: flex;
+}
+
+.general-envi-slider{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    justify-content: space-between;
+}
