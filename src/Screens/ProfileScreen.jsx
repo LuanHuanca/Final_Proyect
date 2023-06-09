@@ -8,6 +8,7 @@ const ProfileScreen = () => {
   return (
     <div className='Profile-card'>
       <ProfileCard img_perfil={users.imgsrc} username={users.user} email={users.email}/>
+     
     </div>
   )
 }
