@@ -17,6 +17,7 @@ const Details = () => {
         <div className="details-container">
           <InputContainer title={"Hora"} type={"time"} shadow={""}/>
           <InputContainer title={"Fecha"} type={"date"} shadow={""}/>
+          <InputContainer title={"Fecha"} type={"date"} shadow={""}/>
         </div>
         <NavLink to={"/confirme"} ><Button name="Aceptar"/></NavLink>
     </div>

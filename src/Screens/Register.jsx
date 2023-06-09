@@ -9,14 +9,11 @@ const Register = () => {
   return (
     <div >
         <Title title={"REGISTRO"} context={"Llene los siguientes datos"}/>
-        <h4 className='container-text'>Nombre Completo</h4>
-        <InputContainer type={"text"} shadow={"Josue Romay Torrejon"}/>
-        <h4 className='container-text'>Email</h4>
-        <InputContainer type={"text"} shadow={"example@gmail.com"}/>
-        <h4 className='container-text'>Contraseña</h4>
-        <InputContainer type={"password"} shadow={"Introduce tu contraseña"}/>
-        <Button name={"Crear Cuenta"}/>
-        <h5 className='text-h5'>Ya Tienes una Cuenta? Inicia Sesion</h5>
+        <InputContainer title='Nombre Completo' type={"text"} shadow={"Josue Romay Torrejon"}/>
+        <InputContainer title='Email' type={"text"} shadow={"example@gmail.com"}/>
+        <InputContainer title='Contraseña' type={"password"} shadow={"Introduce tu contraseña"}/>
+        <NavLink to={"/login"}><Button name={"Crear Cuenta"}/></NavLink>
+        <h5 className='text-h5'>Ya Tienes una Cuenta? <NavLink to={"/login"}>Inicia Sesion</NavLink></h5>
     </div>
   )
 }

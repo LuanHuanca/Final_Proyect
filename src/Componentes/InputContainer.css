@@ -1,14 +1,14 @@
 .container{
-    justify-content: center;
-    
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
 }
-.container span{
+.container h4{
     font-family: 'Inter';
     font-size: 20px;
     line-height: 5px;
     border: #000 ;
     position: relative;
-    left: 40px;
     font-weight: bold;
 }
 
@@ -20,7 +20,6 @@
     border: 3px solid #737373;
     border-radius: 15px;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
