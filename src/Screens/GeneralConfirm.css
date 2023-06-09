@@ -1,0 +1,13 @@
+.general-confirm-header{
+    display: flex;
+}
+
+.confirm-details {
+    align-items: center;
+}
+
+.confirm-container{
+    overflow-y: scroll;
+    display: grid;
+    height: 420px;
+}

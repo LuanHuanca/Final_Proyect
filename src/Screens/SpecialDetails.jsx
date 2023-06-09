@@ -2,10 +2,10 @@ import React from 'react'
 import State from '../Componentes/State'
 import Button from '../Componentes/Button'
 import { NavLink } from 'react-router-dom'
-import "./Details.css"
+import "./SpecialDetails.css"
 import InputContainer from '../Componentes/InputContainer'
 
-const Details = () => {
+const SpecialDetails = () => {
   return (
     <div> 
         <div className="details-header">
@@ -19,9 +19,9 @@ const Details = () => {
           <InputContainer title={"Fecha"} type={"date"} shadow={""}/>
           <InputContainer title={"Fecha"} type={"date"} shadow={""}/>
         </div>
-        <NavLink to={"/confirme"} ><Button name="Aceptar"/></NavLink>
+        <NavLink to={"/special/confirm"} ><Button name="Aceptar"/></NavLink>
     </div>
   )
 }
 
-export default Details
+export default SpecialDetails

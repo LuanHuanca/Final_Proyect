@@ -1,6 +1,6 @@
 import React from 'react'
 import ProfileCard from '../Componentes/ProfileCard'
-import './ProfileScreen.css'
+import './Profile.css'
 import users from "../assets/users.json"
 
 

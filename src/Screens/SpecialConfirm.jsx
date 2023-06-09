@@ -2,10 +2,10 @@ import React from 'react'
 import State from '../Componentes/State'
 import { NavLink } from 'react-router-dom'
 import Button from '../Componentes/Button'
-import "./ConfirmeSpecial.css"
+import "./SpecialConfirm.css"
 import InputContainer from '../Componentes/InputContainer'
 
-const ConfirmeSpecial = () => {
+const SpecialConfirm = () => {
   return (
     <div>
         <div className="confirme-header">
@@ -26,4 +26,4 @@ const ConfirmeSpecial = () => {
   )
 }
 
-export default ConfirmeSpecial
+export default SpecialConfirm
