@@ -27,7 +27,7 @@ const GeneralReserve = () => {
           <img src="https://www.boliviaentusmanos.com/amarillas1/businesscard/imagenes/lu_qing_11.jpg"></img>
           
         </div>
-        <NavLink to={"/gdetails"}><Button name="Aceptar"/></NavLink>
+        <NavLink to={"/general/details"}><Button name="Aceptar"/></NavLink>
     </div>
   )
 }

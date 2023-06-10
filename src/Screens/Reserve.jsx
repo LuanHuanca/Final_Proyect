@@ -11,7 +11,7 @@ const Reserve = () => {
         <div className="reserved-container">
           <span>No tiene reservas hechas</span>   
         </div>
-        <NavLink to={"/reserve"}><Button name="Reservar"/></NavLink>
+        <NavLink to={"/"}><Button name="Reservar"/></NavLink>
     </div>
   )
 }
