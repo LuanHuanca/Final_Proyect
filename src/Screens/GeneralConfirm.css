@@ -2,12 +2,14 @@
     display: flex;
 }
 
-.confirm-details {
-    align-items: center;
-}
 
 .confirm-container{
+    
+    display: block;
+    margin: 10px;
+}
+
+.confirm-details{
     overflow-y: scroll;
-    display: grid;
-    height: 420px;
+    height: 490px;
 }

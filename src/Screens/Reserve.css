@@ -1,7 +1,13 @@
-.reserved-container{
+.reserve-container{
     margin: 10px;
-    height: 80%;
-    display: block;
-    align-items: center;
     overflow-y: scroll;
+    height: 620px;
+}
+
+.before-reserve{
+
+}
+
+.post-reserve{
+
 }

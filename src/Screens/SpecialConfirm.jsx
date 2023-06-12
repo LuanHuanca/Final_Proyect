@@ -19,7 +19,6 @@ const SpecialConfirm = () => {
           <InputContainer title={"Personas"} type={"Number"} shadow={""}/>
           <InputContainer title={"Hora"} type={"time"} shadow={""}/>
           <InputContainer title={"Fecha"} type={"date"} shadow={""}/>
-          <InputContainer title={"Mesa:"} type={"text"} shadow={""}/>
         </div>
         <NavLink to={"/"}><Button name="Aceptar"/></NavLink>
     </div>

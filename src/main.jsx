@@ -9,14 +9,15 @@ import Home from './Screens/Home.jsx'
 import ImageHeader from './Componentes/ImageHeader.jsx'
 import NavBar from './Componentes/NavBar.jsx'
 import SpecialReserve from './Screens/SpecialReserve.jsx'
-import Details from './Screens/SpecialDetails.jsx'
-import ConfirmeSpecial from './Screens/SpecialConfirm.jsx'
+import SpecialDetails from './Screens/SpecialDetails.jsx'
+import SpecialConfirm from './Screens/SpecialConfirm.jsx'
 import Reserve from './Screens/Reserve.jsx'
 import Reviews from './Screens/Reviews.jsx'
-import ProfileScreen from './Screens/Profile'
+import Profile from './Screens/Profile'
 import GeneralReserve  from './Screens/GeneralReserve.jsx'
 import GeneralDetails  from './Screens/GeneralDetails.jsx'
 import GeneralConfirm from './Screens/GeneralConfirm.jsx'
+import App from './App'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -28,11 +29,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route  path='*' element={<NotFound />}  />
         <Route  path='/' element={<Home/>}/>
         <Route  path='/special/reserve' element={<SpecialReserve/>}/>
-        <Route  path='/special/details' element={<Details/>}/>
-        <Route  path='/special/confirm' element={<ConfirmeSpecial/>}/>
+        <Route  path='/special/details' element={<SpecialDetails/>}/>
+        <Route  path='/special/confirm' element={<SpecialConfirm/>}/>
         <Route  path='/reserved' element={<Reserve/>}/>
         <Route  path='/reviews' element={<Reviews/>}/>
-        <Route  path='/profile' element={<ProfileScreen/>}/>
+        <Route  path='/profile' element={<Profile/>}/>
         <Route  path='/general/reserve' element={<GeneralReserve/>}/>
         <Route  path='/general/details' element={<GeneralDetails/>}/>
         <Route  path='/general/confirm' element={<GeneralConfirm/>}/>

@@ -8,7 +8,7 @@ const SpecialReserve = () => {
   return (
     <div>
         <div className="reserve-header">
-            <State state="Tipo de Evento" />
+            <State state="Tipo de Evento"/>
             <State state="Detalles" color="#CD3131" Text="#000000"/>
             <State state="Confirmacion"/>
         </div>

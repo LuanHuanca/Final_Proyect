@@ -3,6 +3,7 @@ import State from '../Componentes/State'
 import InputContainer from '../Componentes/InputContainer'
 import Button from '../Componentes/Button'
 import "./GeneralConfirm.css"
+import { NavLink } from 'react-router-dom'
 
 
 function GeneralConfirm() {
@@ -19,7 +20,7 @@ function GeneralConfirm() {
           <InputContainer title={"Hora"} type={"time"} shadow={""}/>
           <InputContainer title={"Fecha"} type={"date"} shadow={""}/>
         </div>
-        <Button name="Confirmar"/>
+        <NavLink to={"/"}><Button name="Confirmar"/></NavLink>
     </div>
   )
 }

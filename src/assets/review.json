@@ -4,104 +4,119 @@
         "user": "Tobey Maguire",
         "imgsrc": "/static/image/1.jpg",
         "date": "Hace 5 dias",
-        "description": "Terrible xq? xq yo lo digo"
+        "description": "Terrible xq? xq yo lo digo",
+        "qualification": 4.5
     },
     {
         "id": 2,
         "user": "HomosecualJoxxx",
         "imgsrc": "/static/image/2.jpg",
         "date": "Hace 10 dias",
-        "description": "Me gusto la atencion del camarero 7w7"
+        "description": "Me gusto la atencion del camarero 7w7",
+        "qualification": 4.0
     },
     {
         "id": 3,
         "user": "Luan",
         "imgsrc": "/static/image/3.jpg",
         "date": "Hace 2 segundos",
-        "description": "Pinche camarero palacios xdxd"
+        "description": "Pinche camarero palacios xdxd",
+        "qualification": 3.6
     },
     {
         "id": 4,
         "user": "Mario",
         "imgsrc": "/static/image/4.jpg",
         "date": "Hace 10 meses",
-        "description": "Me gustan los hongos"
+        "description": "Me gustan los hongos",
+        "qualification": 1.0
     },
     {
         "id": 5,
         "user": "User X",
         "imgsrc": "/static/image/5.jpg",
         "date": "Hace 1 siglo",
-        "description": "Comentario serio... me gusto la comida, tiene bonitos hambientes, la atencion es una de las mejores que tuve y de hecho no tengo ninfuna queja pero madre mia que linda la recepcionsita uwu"
+        "description": "Comentario serio... me gusto la comida, tiene bonitos hambientes, la atencion es una de las mejores que tuve y de hecho no tengo ninfuna queja pero madre mia que linda la recepcionsita uwu",
+        "qualification": 2.3
     },
     {
         "id": 6,
         "user": "Tobey Maguire",
         "imgsrc": "/static/image/1.jpg",
         "date": "Hace 5 dias",
-        "description": "Terrible xq? xq yo lo digo"
+        "description": "Terrible xq? xq yo lo digo",
+        "qualification": 6.0
     },
     {
         "id": 7,
         "user": "HomosecualJoxxx",
         "imgsrc": "/static/image/2.jpg",
         "date": "Hace 10 dias",
-        "description": "Me gusto la atencion del camarero 7w7"
+        "description": "Me gusto la atencion del camarero 7w7",
+        "qualification": 4.5
     },
     {
         "id": 8,
         "user": "Luan",
         "imgsrc": "/static/image/3.jpg",
         "date": "Hace 2 segundos",
-        "description": "Solicito que tengan precios mas accesibles porfis xd"
+        "description": "Solicito que tengan precios mas accesibles porfis xd",
+        "qualification": 1.4
     },
     {
         "id": 9,
         "user": "Mario",
         "imgsrc": "/static/image/4.jpg",
         "date": "Hace 10 meses",
-        "description": "Me gustan los hongos"
+        "description": "Me gustan los hongos",
+        "qualification": 3.4
     },
     {
         "id": 10,
         "user": "User X",
         "imgsrc": "/static/image/5.jpg",
         "date": "Hace 1 siglo",
-        "description": "Comentario serio... me gusto la comida, tiene bonitos hambientes, la atencion es una de las mejores que tuve y de hecho no tengo ninfuna queja pero madre mia que linda la recepcionsita uwu"
+        "description": "Comentario serio... me gusto la comida, tiene bonitos hambientes, la atencion es una de las mejores que tuve y de hecho no tengo ninfuna queja pero madre mia que linda la recepcionsita uwu",
+        "qualification": 2.8
     },
     {
         "id": 11,
         "user": "Tobey Maguire",
         "imgsrc": "/static/image/1.jpg",
         "date": "Hace 5 dias",
-        "description": "Terrible xq? xq yo lo digo"
+        "description": "Terrible xq? xq yo lo digo",
+        "qualification": 1.9
     },
     {
         "id": 12,
         "user": "HomosecualJoxxx",
         "imgsrc": "/static/image/2.jpg",
         "date": "Hace 10 dias",
-        "description": "Me gusto la atencion del camarero 7w7"
+        "description": "Me gusto la atencion del camarero 7w7",
+        "qualification": 2.1
     },
     {
         "id": 13,
         "user": "Luan",
         "imgsrc": "/static/image/3.jpg",
         "date": "Hace 2 segundos",
-        "description": "El palacios es un noob en el left :v"
+        "description": "El palacios es un noob en el left :v",
+        "qualification": 3.0
     },
     {
         "id": 14,
         "user": "Mario",
         "imgsrc": "/static/image/4.jpg",
         "date": "Hace 10 meses",
-        "description": "Me gustan los hongos"
+        "description": "Me gustan los hongos",
+        "qualification": 4.0
     },
     {
         "id": 15,
         "user": "User X",
         "imgsrc": "/static/image/5.jpg",
         "date": "Hace 1 siglo",
-        "description": "Comentario serio... me gusto la comida, tiene bonitos hambientes, la atencion es una de las mejores que tuve y de hecho no tengo ninfuna queja pero madre mia que linda la recepcionsita uwu"
+        "description": "Comentario serio... me gusto la comida, tiene bonitos hambientes, la atencion es una de las mejores que tuve y de hecho no tengo ninfuna queja pero madre mia que linda la recepcionsita uwu",
+        "qualification": 5.9
     }
 ]
