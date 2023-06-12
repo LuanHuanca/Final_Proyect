@@ -1,18 +1,16 @@
 import React from 'react'
 import './InputContainer.css'
 
-const InputContainer = ({title, type, shadow,action,valor}) => {
+const InputContainer = ({title, type, shadow,action}) => {
   return (
     <div className='container'>
       <h4>{title}</h4>
       <div className='input-container'>
         <input 
         type={type}
-        value={valor} 
         placeholder={shadow}
-        onChange={(event)=>{
-          {`set${action}`}(event.target.value);
-        }}/>
+        onChange={action}
+        />
       </div>
     </div>
   )

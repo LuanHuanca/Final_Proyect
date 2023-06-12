@@ -28,38 +28,48 @@ const Register = () => {
 
   return (
     <div >
+        <form>
         <Title title={"REGISTRO"} context={"Llene los siguientes datos"}/>
-        <InputContainer 
-        title='Cedula de identidad'
-        type="number"
-        shadow="12345678"
-        action={setCi}
-        />
-        <InputContainer 
-        title='Nombre Completo'
-        type="text"
-        shadow="Josue Romay Torrejon"
-        action={setUsername}
-        />
-        <InputContainer
-        title='Email'
-        type="text"
-        shadow="example@gmail.com"
-        action={setEmail}
-        />
-        <InputContainer
-        title='Contraseña'
-        type={"password"}
-        shadow={"Introduce tu contraseña"}
-        action={setPassword}
-        />
-        <NavLink to={"/login"}>
-          <Button 
-          name="Crear Cuenta"
-          funcion={add}
+          <InputContainer 
+          title='Cedula de identidad'
+          type="number"
+          shadow="12345678"
+          action={(event)=>{
+            setCi(event.target.value);
+          }}
           />
-        </NavLink>
-        <h5 className='text-h5'>Ya Tienes una Cuenta? <NavLink to={"/login"}>Inicia Sesion</NavLink></h5>
+          <InputContainer 
+          title='Nombre Completo'
+          type="text"
+          shadow="Josue Romay Torrejon"
+          action={(event)=>{
+            setUsername(event.target.value);
+          }}
+          />
+          <InputContainer
+          title='Email'
+          type="email"
+          shadow="example@gmail.com"
+          action={(event)=>{
+            setEmail(event.target.value);
+          }}
+          />
+          <InputContainer
+          title='Contraseña'
+          type="password"
+          shadow={"Introduce tu contraseña"}
+          action={(event)=>{
+            setPassword(event.target.value);
+          }}
+          />
+          <NavLink to={"/login"}>
+            <Button 
+            name="Crear Cuenta"
+            funcion={add}
+            />
+          </NavLink>
+          <h5 className='text-h5'>Ya Tienes una Cuenta? <NavLink to={"/login"}>Inicia Sesion</NavLink></h5>
+        </form>
     </div>
   )
 }
