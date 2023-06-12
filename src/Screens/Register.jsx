@@ -3,7 +3,7 @@ import './Register.css'
 import InputContainer from '../Componentes/InputContainer.jsx'
 import Title from '../Componentes/Title.jsx'
 import Button from '../Componentes/Button.jsx'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import Validation from './RegisterValidation';
 import axios from 'axios'
 
@@ -14,6 +14,7 @@ const Register = () => {
     email: '',
     password: ''
 })
+const navigate = useNavigate();
 const [errors, setErrors] = useState({})
 const handleInput = (event) => {
   setValues(prev => ({...prev, [event.target.name] : [event.target.value] }))
@@ -23,7 +24,13 @@ const handleSubmit = (event) =>{
   event.preventDefault();
   setErrors(Validation(values));
   if(errors.name === "" && errors.email === "" && errors.password === ""){
-     axios.post('')
+     axios.post('http://localhost:3000/register', values)
+     .then(res => {
+           navigate('/login');
+
+     })
+     .catch(err => console.log(err));
+     
   }
 
 }
@@ -37,7 +44,7 @@ const handleSubmit = (event) =>{
         {errors.name && <span className='text-danger'>  {errors.name}</span>}
         </div>
         <div>
-        <InputContainer title='Email' type={"text"} shadow={"example@gmail.com"} name='email'
+        <InputContainer title='Email' type={"email"} shadow={"example@gmail.com"} name='email'
         nChange={handleInput}/>
         {errors.email && <span className='text-danger'>  {errors.email}</span>}
         </div>
@@ -46,6 +53,7 @@ const handleSubmit = (event) =>{
         nChange={handleInput}/>
         {errors.password && <span className='text-danger'>  {errors.password}</span>}
         </div>
+        
         <Button type='submit' name={"Crear Cuenta"}/>
         <NavLink to={"/login"}></NavLink>
         

@@ -6,19 +6,19 @@ function Validation(values){
     
 
     if(values.email === "") {
-        error.email = "Nmae should not be empty"
+        error.email = "email no debe estar vacia"
     }
     else if(!email_pattern.test(values.email)){
-        error.email = "Email Didn't match"
+        error.email = "Correo electrónico no coincide"
     }else {
         error.email = ""
     }
 
     if(values.password === ""){
-        error.password = "Password should not be empty"
+        error.password = "La contraseña no debe estar vacía"
     }
     else if(!password_pattern.test(values.password)) {
-        error.password = "Password didn't match"
+        error.password = "La contraseña no coincide"
     } else {
         error.password = ""
     }

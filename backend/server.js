@@ -4,6 +4,7 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors());
+app.use(express.json());
 
 const db = mysql.createConnection({
     host: "localhost",
@@ -28,6 +29,6 @@ app.post('/cf_chifa', (req, res) =>{
 })
 
 
-app.listen(8081, ()=>{
+app.listen(3000, ()=>{
     console.log("listening");
 })
