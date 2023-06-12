@@ -24,9 +24,9 @@ const Login = () => {
   return (
     <div className='box'>
         <Title title={"INICIO DE SESION"} context={"Inicia sesión con tu correo electrónico"}/>
-        <form action='' onSubmit={handleSubmit}>
+        <form action="" onSubmit={handleSubmit}>
           <div>
-            <InputContainer title={"Email"} type={"email"} shadow={"example@gmail.com"} name='email'
+            <InputContainer title={"Email"} type={"email"} shadow={"example@gmail.com"} name='email' 
             onChange={handleInput}/>
             {errors.email && <span className='text-danger'>  {errors.email}</span>}
           </div>

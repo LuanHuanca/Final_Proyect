@@ -13,7 +13,7 @@ const db = mysql.createConnection({
     database: "cf_chifa"
 })
 
-app.post('/cf_chifa', (req, res) =>{
+app.post('/register', (req, res) =>{
     const sql = "INSERT INTO login (´name', 'email' , 'password') VALUES (?)";
     const values = [
         req.body.name,
@@ -29,6 +29,6 @@ app.post('/cf_chifa', (req, res) =>{
 })
 
 
-app.listen(3000, ()=>{
+app.listen(35173, ()=>{
     console.log("listening");
 })

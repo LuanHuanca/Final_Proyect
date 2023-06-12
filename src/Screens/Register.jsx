@@ -24,7 +24,7 @@ const handleSubmit = (event) =>{
   event.preventDefault();
   setErrors(Validation(values));
   if(errors.name === "" && errors.email === "" && errors.password === ""){
-     axios.post('http://localhost:3000/register', values)
+     axios.post('http://localhost:5173/register', values)
      .then(res => {
            navigate('/login');
 
@@ -37,7 +37,7 @@ const handleSubmit = (event) =>{
   return (
     <div >
         <Title title={"REGISTRO"} context={"Llene los siguientes datos"}/>
-        <form action='' onSubmit={handleSubmit}>
+        <form action="" onSubmit={handleSubmit}>
         <div>
         <InputContainer title='Nombre Completo' type={"text"} shadow={"Josue Romay Torrejon"} name='name'
         nChange={handleInput}/>
@@ -55,7 +55,7 @@ const handleSubmit = (event) =>{
         </div>
         
         <Button type='submit' name={"Crear Cuenta"}/>
-        <NavLink to={"/login"}></NavLink>
+        <NavLink to="/login"></NavLink>
         
         <h5 className='text-h5'>Ya Tienes una Cuenta? <NavLink to={"/login"}>Inicia Sesion</NavLink></h5>
         </form>
