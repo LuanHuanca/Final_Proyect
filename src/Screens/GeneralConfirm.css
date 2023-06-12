@@ -1,0 +1,15 @@
+.general-confirm-header{
+    display: flex;
+}
+
+
+.confirm-container{
+    
+    display: block;
+    margin: 10px;
+}
+
+.confirm-details{
+    overflow-y: scroll;
+    height: 490px;
+}

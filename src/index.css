@@ -5,7 +5,8 @@
 
   width: 100%;
   height: 100%;
-  background: rgb(232, 184, 94);
+  background: url(/static/image/fondo.jpeg) no-repeat center center fixed;
+  background-size: cover;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

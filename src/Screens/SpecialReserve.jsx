@@ -8,7 +8,7 @@ const SpecialReserve = () => {
   return (
     <div>
         <div className="reserve-header">
-            <State state="Tipo de Evento" />
+            <State state="Tipo de Evento"/>
             <State state="Detalles" color="#CD3131" Text="#000000"/>
             <State state="Confirmacion"/>
         </div>
@@ -29,7 +29,7 @@ const SpecialReserve = () => {
 
         <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHBzsCclkaqdej1bU96DII2F2oeMciJ-AO7A&usqp=CAU'></img>
 
-        <NavLink to={"/details"}><Button name="Aceptar"/></NavLink>
+        <NavLink to={"/special/details"}><Button name="Aceptar"/></NavLink>
     </div>
   )
 }

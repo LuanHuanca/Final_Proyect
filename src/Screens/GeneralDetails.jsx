@@ -3,9 +3,9 @@ import State from "../Componentes/State";
 import InputContainer from "../Componentes/InputContainer";
 import Button from "../Componentes/Button";
 import { NavLink } from "react-router-dom";
-import "./GenDetails.css";
+import "./GeneralDetails.css";
 
-function GenDetails() {
+function GeneralDetails() {
   return (
     <div>
       <div className="general-details-header">
@@ -20,9 +20,9 @@ function GenDetails() {
         <InputContainer title={"Fecha"} type={"date"} shadow={""} />
       </div>
       
-      <NavLink to={"/gconfirm"} ><Button name="Aceptar"/></NavLink>
+      <NavLink to={"/general/confirm"} ><Button name="Aceptar"/></NavLink>
     </div>
   );
 }
 
-export default GenDetails;
+export default GeneralDetails;

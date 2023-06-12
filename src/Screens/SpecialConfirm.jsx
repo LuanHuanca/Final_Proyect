@@ -1,27 +1,28 @@
 import React from 'react'
 import State from '../Componentes/State'
-import Button from '../Componentes/Button'
 import { NavLink } from 'react-router-dom'
-import "./Details.css"
+import Button from '../Componentes/Button'
+import "./SpecialConfirm.css"
 import InputContainer from '../Componentes/InputContainer'
 
-const Details = () => {
+const SpecialConfirm = () => {
   return (
-    <div> 
-        <div className="details-header">
+    <div>
+        <div className="confirme-header">
             <State state="Tipo de Evento"/>
             <State state="Detalles"/>
             <State state="Confirmacion"/>
         </div>
         
-        <div className="details-container">
+        <div className="confirme-container">
+          <InputContainer title={"Tipo de evento"} type={"text"} shadow={""}/>
+          <InputContainer title={"Personas"} type={"Number"} shadow={""}/>
           <InputContainer title={"Hora"} type={"time"} shadow={""}/>
           <InputContainer title={"Fecha"} type={"date"} shadow={""}/>
-          <InputContainer title={"Fecha"} type={"date"} shadow={""}/>
         </div>
-        <NavLink to={"/confirme"} ><Button name="Aceptar"/></NavLink>
+        <NavLink to={"/"}><Button name="Aceptar"/></NavLink>
     </div>
   )
 }
 
-export default Details
+export default SpecialConfirm

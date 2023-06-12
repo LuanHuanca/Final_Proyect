@@ -1,10 +1,6 @@
-.general-confirm-header{
-    display: flex;
-}
-
-.confirm-container {
+.confirme-container {
     margin: 10px;
-    height: 70%;
+    height: 500px;
     display: block;
     align-items: center;
     overflow-y: scroll;
@@ -12,3 +8,6 @@
 }
 
 
+.confirme-header{
+    display: flex;
+}

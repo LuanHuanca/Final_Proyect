@@ -1,10 +1,9 @@
-import React from 'react'
-import Login from './Screens/Login';
+import React, { useState } from 'react'
 
 function App() {
   return (
     <div className='App'>
-      <Login/>
+
     </div>
   )
 }
