@@ -15,8 +15,8 @@ const Register = () => {
   const [password,setPassword] = useState("");
   const [email,setEmail] = useState("");
 
-  const add = ()=>{
-    Axios.post("http://localhost:5173/register",{
+  const agregar_cliente = ()=>{
+    Axios.post("http://localhost:5172/register",{
       ci:ci,
       username:username,
       password:password,
@@ -65,7 +65,7 @@ const Register = () => {
           <NavLink to={"/login"}>
             <Button 
             name="Crear Cuenta"
-            funcion={add}
+            funcion={agregar_cliente}
             />
           </NavLink>
           <h5 className='text-h5'>Ya Tienes una Cuenta? <NavLink to={"/login"}>Inicia Sesion</NavLink></h5>
