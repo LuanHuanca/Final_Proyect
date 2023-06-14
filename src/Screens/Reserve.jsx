@@ -8,12 +8,12 @@ import InputContainer from '../Componentes/InputContainer'
 const Reserve = () => {
   return (
     <div className='reserve-container'>
-      <div className='before-reserve'>
+      {/* <div className='before-reserve'>
         <p>No tiene reservas hechas</p>
         <NavLink to={"/"}><Button name="Reservar"/></NavLink>
-      </div>
+      </div> */}
 
-      {/* <div className="post-re">
+      <div className="post-re">
         <State state="Confirmacion"/>
         <InputContainer title={"Cantidad de Personas"} type={"number"} shadow={"6"}/>
         <InputContainer title={"Tipo de evento"} type={"text"} shadow={"Normal"}/>
@@ -22,7 +22,7 @@ const Reserve = () => {
         <InputContainer title={"Fecha"} type={"date"} shadow={"13/06/2023"}/>
         <Button name={"Editar"}></Button>
         <Button name={"Confirmar"}></Button>
-      </div> */}
+      </div>
     </div>
   )
 }

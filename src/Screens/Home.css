@@ -8,14 +8,6 @@
     display: flex;
 }
 
-.menu{
-    height: 345px;
-    overflow-y: scroll;
-}
-
-.ubicacion{
-    height: 300px;
-}
 
 .ubicacion span{
     color: #000000;
@@ -24,11 +16,31 @@
     margin: 5px;
 }
 
+.menu{
+    height: 345px;
+    overflow-y: scroll;
+}
+
+.ubicacion{
+    margin: 10px;
+    height: 300px;
+    display: none;
+}
+
 .contactos{
     display: grid;
     font-size: 14px;
     color: red;
     padding-bottom: 10px;
+    display: none;
+}
+
+.ubicacion img{
+    height: 55%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+     
 }
 
 .contactos div{

@@ -1,70 +1,70 @@
 [
     {
       "id": 1,
-      "imgsrc": "../../public/static/image/dishes/chicharronDePollo.jpg",
+      "imgsrc": "../../static/image/dishes/chicharronDePollo.jpg",
       "title": "Chicharrón de Pollo",
       "description": "Con Salsa agrulce, Arroz, Soya Picante, Barbacoa o seco",
       "price": 40
     },
     {
       "id": 2,
-      "imgsrc": "../../public/static/image/dishes/Pollo_Rebosado.jpg",
+      "imgsrc": "../../static/image/dishes/Pollo_Rebosado.jpg",
       "title": "Pollo Rebosado ",
       "description": "Con Salsa agrulce, Brócoli",
       "price": 40
     },
     {
       "id": 3,
-      "imgsrc": "../../public/static/image/dishes/Pollo_Cortado.jpg",
+      "imgsrc": "../../static/image/dishes/Pollo_Cortado.jpg",
       "title": "Pollo Cortado",
       "description": "Con verduras, Arroz",
       "price": 40
     },
     {
       "id": 4,
-      "imgsrc": "../../public/static/image/dishes/Camaron_Rebosado.jpg",
+      "imgsrc": "../../static/image/dishes/Camaron_Rebosado.jpg",
       "title": "Camarón Rebosado",
       "description": "Con Salsa agridulce, Salsa Picante ",
       "price": 50
     },
     {
       "id": 5,
-      "imgsrc": "../../public/static/image/dishes/Pollo_Asado.jpg",
+      "imgsrc": "../../static/image/dishes/Pollo_Asado.jpg",
       "title": "Pollo Asado",
       "description": "Al estilo Pekín",
       "price": 40
     },
     {
       "id": 6,
-      "imgsrc": "../../public/static/image/dishes/Carne_Cortada.jpg",
+      "imgsrc": "../../static/image/dishes/Carne_Cortada.jpg",
       "title": "Carne Cortada ",
       "description": "Carne Cortada ",
       "price": 40
     },
     {
       "id": 7,
-      "imgsrc": "../../public/static/image/dishes/Cerdo_Rebosado.jpg",
+      "imgsrc": "../../static/image/dishes/Cerdo_Rebosado.jpg",
       "title": "Cerdo Rebosado",
       "description": "Con Salsa agridulce, Pimentón ",
       "price": 40
     },
     {
       "id": 8,
-      "imgsrc": "../../public/static/image/dishes/Chuleta_de_Cerdo.jpg",
+      "imgsrc": "../../static/image/dishes/Chuleta_de_Cerdo.jpg",
       "title": "Chuleta de Cerdo",
       "description": "Con Salsa agrulce, Soya, Picante, Barbacoa o Seco",
       "price": 40
     },
     {
       "id": 9,
-      "imgsrc": "../../public/static/image/dishes/pescadoFrito.jpeg",
+      "imgsrc": "../../static/image/dishes/pescadoFrito.jpeg",
       "title": "Pescado Frito",
       "description": "Con Salsa agrulce, Soya Picante, Barbacioa o seco",
       "price": 40
     },
     {
       "id": 10,
-      "imgsrc": "../../public/static/image/dishes/Tofu_Frito.jpg",
+      "imgsrc": "../../static/image/dishes/Tofu_Frito.jpg",
       "title": "Tofu Frito",
       "description": "Con verduras",
       "price": 33

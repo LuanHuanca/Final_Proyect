@@ -1,9 +1,9 @@
 import React from 'react'
 import "./State.css"
 
-const State = ({state, color, text}) => {
+const State = ({state, funcion}) => {
   return (
-    <div className='state-container' style={{background: {color}, color: {text}}}>
+    <div className='state-container' onClick={() => funcion()}>
         {state}
     </div>
   )
