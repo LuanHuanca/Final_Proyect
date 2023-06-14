@@ -4,8 +4,6 @@ import { NavLink } from 'react-router-dom'
 import "./Home.css"
 import State from '../Componentes/State'
 import DishCard from '../Componentes/DishCard'
-import dishes from "../assets/dishes.json"
-import { Icon } from '@iconify/react'
 import Axios from 'axios';
 
 
@@ -14,7 +12,7 @@ const Home = () => {
   const [menu,setMenu] = useState([]);
 
   const get_menu = ()=>{
-    Axios.get("http://localhost:5170/").then((response)=>{
+    Axios.get("http://localhost:5172/").then((response)=>{
       setMenu(response.data);
     });
   }
