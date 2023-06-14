@@ -1,6 +1,6 @@
 .reserve-container{
     text-align: center;
-    
+    height: 300px;
 }
 .reserve-container select{
     background-color: #A93528;
@@ -19,7 +19,6 @@
     display: flex;
 }
 
-div img{
+.reserve-container img{
     margin: 5px;
-    width: 95%;  
 }
