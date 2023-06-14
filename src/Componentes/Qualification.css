@@ -16,7 +16,6 @@
 }
 
 .rank input{ 
-    
     width: 20px;
     text-align: center;
     height: 10px;
@@ -32,7 +31,9 @@
 }
 
 .comment{
-    width: 230px;
+    width: 80%;
     margin-bottom: 2px;
     height: 20px;
+    border-radius: 8px;
+    border: 0px;
 }
