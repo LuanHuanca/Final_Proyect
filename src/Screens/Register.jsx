@@ -16,7 +16,7 @@ const Register = () => {
   const [email,setEmail] = useState("");
 
   const agregar_cliente = ()=>{
-    Axios.post("http://localhost:5172/register",{
+    Axios.post("http://localhost:5170/register",{
       ci:ci,
       username:username,
       password:password,
