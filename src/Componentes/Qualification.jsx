@@ -9,8 +9,6 @@ const Qualification = () => {
         <Icon icon={"material-symbols:star"}/>
         <span>(<input type="number" placeholder='0.0'/>)</span>
       </div>
-      
-      
       <input className='comment' type="" placeholder='enviar un comentario'/>
       <div className="button"><Icon icon={"quill:send"}/></div>
     </div>
