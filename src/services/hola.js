@@ -1,6 +1,3 @@
-export const hola = (preMessage) => {
-    preMessage = "hola"
-    console.log("hola")
-    return preMessage
-
+export const hola = () => {
+    console.log("sin error :3")
 };
