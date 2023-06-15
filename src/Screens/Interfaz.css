@@ -1,0 +1,47 @@
+.frase h3{
+    
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+    color: #b14545;
+    text-shadow: 0 0 5px #f71713,
+    0 0 25px #f71713,
+    0 0 55px #f71713,
+    0 0 1005px #f71713;
+    letter-spacing: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 1s;
+    
+}
+.imagen img{
+    border-radius: 44px;
+    margin: 0px auto;
+    display: block;
+}
+.text-h5 a{
+    color: red;
+}
+.text-h5{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    
+    
+}
+.caja{
+    
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato';
+    font-size: 19px;
+    text-align: center;
+    color: #fff;
+    background-color: #ea1700;
+}

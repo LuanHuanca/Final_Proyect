@@ -18,6 +18,9 @@ import GeneralReserve  from './Screens/GeneralReserve.jsx'
 import GeneralDetails  from './Screens/GeneralDetails.jsx'
 import GeneralConfirm from './Screens/GeneralConfirm.jsx'
 import App from './App'
+import Interfaz from './Screens/Interfaz'
+
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -37,6 +40,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route  path='/general/reserve' element={<GeneralReserve/>}/>
         <Route  path='/general/details' element={<GeneralDetails/>}/>
         <Route  path='/general/confirm' element={<GeneralConfirm/>}/>
+        <Route  path='/interfaz' element={<Interfaz/>}/>
+       
+
       </Routes>
     <NavBar/>
     </BrowserRouter>
