@@ -16,10 +16,6 @@ export function mostrarContactos(){
   document.getElementById('contactos').style.display = "block";
 }
 
-export function ocultarNavbar(){
-  document.getElementById('navbar').style.display = "block";
-}
-
 export function primeraFaseSpecial(){
   document.getElementById('special-reserve-type-event').style.display = "block";
   document.getElementById('special-reserve-details').style.display = "none";
@@ -28,6 +24,13 @@ export function primeraFaseSpecial(){
 export function segundaFaseSpecial(){
   document.getElementById('special-reserve-type-event').style.display = "none";
   document.getElementById('special-reserve-details').style.display = "block";
+}
+
+export function ultimaFaseSpecial(){
+  document.getElementById('special-reserve-type-event').style.display = "none";
+  document.getElementById('special-reserve-details').style.display = "none";
+  document.getElementById('confirmed').style.display = "block";
+  document.getElementById('state').style.display = "none";
 }
 
 export function primeraFaseGeneral(){
@@ -40,6 +43,15 @@ export function segundaFaseGeneral(){
   document.getElementById('general-reserve-details').style.display = "block";
 }
 
-export function hola(){
-  console.log("sin error :3")
+export function ultimaFaseGeneral(){
+  document.getElementById('general-reserve-ambience').style.display = "none";
+  document.getElementById('general-reserve-details').style.display = "none";
+  document.getElementById('confirmed').style.display = "block";
+  document.getElementById('state').style.display = "none";
 }
+
+export function reservar(){
+  document.getElementById('sin-reserva').style.display = "none";
+  document.getElementById('con-reserva').style.display = "block";
+}
+

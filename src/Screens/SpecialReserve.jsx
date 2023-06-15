@@ -3,13 +3,14 @@ import State from '../Componentes/State'
 import Button from '../Componentes/Button'
 import InputContainer from '../Componentes/InputContainer'
 import { NavLink } from 'react-router-dom'
-import { primeraFaseSpecial, segundaFaseSpecial } from '../services/mostrar'
+import { primeraFaseSpecial, segundaFaseSpecial, ultimaFaseSpecial } from '../services/mostrar'
 import "./SpecialReserve.css"
+import Confirmed from '../Componentes/Confirmed'
 
 const SpecialReserve = () => {
   return (
     <div>
-        <div className="special-reserve-header">
+        <div className="special-reserve-header" id='state'>
             <State state="Tipo de Evento" funcion={primeraFaseSpecial}/>
             <State state="Detalles" funcion={segundaFaseSpecial}/>
         </div>
@@ -33,8 +34,10 @@ const SpecialReserve = () => {
         <div className="special-reserve-details" id='special-reserve-details'>
           <InputContainer title={"Hora"} type={"time"} shadow={""}/>
           <InputContainer title={"Fecha"} type={"date"} shadow={""}/>
-          <NavLink to={"/"}><Button name="Confirmar" funcion={()=>{}}/></NavLink>
+          <Button name="Confirmar" funcion={ultimaFaseSpecial}/>
         </div>
+
+        <Confirmed/>
 
     </div>
   )

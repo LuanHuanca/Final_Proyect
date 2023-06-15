@@ -4,12 +4,13 @@ import Button from '../Componentes/Button'
 import { NavLink } from 'react-router-dom'
 import "./GeneralReserve.css"
 import InputContainer from '../Componentes/InputContainer'
-import { primeraFaseGeneral, segundaFaseGeneral } from '../services/mostrar'
+import { primeraFaseGeneral, segundaFaseGeneral, ultimaFaseGeneral } from '../services/mostrar'
+import Confirmed from '../Componentes/Confirmed'
 
 const GeneralReserve = () => {
   return (
     <div>
-        <div className='general-reserve-header'>
+        <div className='general-reserve-header' id='state'>
             <State state="Ambiente" funcion={primeraFaseGeneral}/>
             <State state="Detalles" funcion={segundaFaseGeneral}/>
         </div>
@@ -37,8 +38,11 @@ const GeneralReserve = () => {
           <InputContainer title={"Personas"} type={"number"} shadow={""} />
           <InputContainer title={"Hora"} type={"time"} shadow={""} />
           <InputContainer title={"Fecha"} type={"date"} shadow={""} />
-          <NavLink to={"/"}><Button name="Confirmar" funcion={()=>{}}/></NavLink>
+          <Button name="Confirmar" funcion={ultimaFaseGeneral}/>
         </div>    
+
+        <Confirmed/>
+
     </div>
   )
 }

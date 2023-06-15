@@ -10,3 +10,8 @@
 .text-h5 a{
     color: red;
 }
+
+.register-container{
+    height: 620px;
+    overflow-y: scroll;
+}

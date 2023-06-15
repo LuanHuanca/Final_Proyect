@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom'
 
 const Register = () => {
   return (
-    <div >
+    <div className='register-container'>
         <Title title={"REGISTRO"} context={"Llene los siguientes datos"}/>
         <InputContainer title='Nombre Completo' type={"text"} shadow={"Josue Romay Torrejon"}/>
         <InputContainer title='Email' type={"text"} shadow={"example@gmail.com"}/>
