@@ -1,10 +1,11 @@
 .dishcard-container{
+    width: 95%;
     background-color: aliceblue;
-    height: auto;
     border-radius: 15px;
     display: flex;
     margin: 10px;
     padding-bottom: 7px;
+    border: 2px solid rgb(255, 144, 0);
 }
 
 .dishcard-container img{
@@ -16,7 +17,7 @@
 .description{
     margin-top: 12px;
     display: grid;
-    width: 50%;
+    width: 100%;
 }
 
 .description p{
@@ -31,21 +32,17 @@
 }
 
 .description span{
-    font-size: 12px;
-    padding-left: 10px;
+    padding-left: 30px;
     padding-bottom: 20px;
-
 }
 
 .price{
     position: absolute;
     right: 0px;
-    bottom: 4px;
+    bottom: 4%;
     background-color: #A93528;
     color: #FFFFFF;
     padding: 3px 7px;
     border-radius: 5px;
-    font-size: 12px;
-    text-align: center;
     height: 0px;
 }

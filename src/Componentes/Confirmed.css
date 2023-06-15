@@ -1,0 +1,20 @@
+.confirmed-container{
+    background-color: #ff5050;
+    height: 150px;
+    border-radius: 25px;
+    margin: 40px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    border: 2px solid #000;
+    display: none;
+    padding: 20px;
+}
+
+.confirmed-container span{
+    color: aliceblue;
+    font-size: 20px;
+    height: 0px;
+    font-weight: bold;
+}

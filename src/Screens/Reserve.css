@@ -5,9 +5,11 @@
 }
 
 .before-reserve{
-
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
 }
 
 .post-reserve{
-
+    display: none;
 }
