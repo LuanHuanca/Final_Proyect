@@ -60,6 +60,20 @@ app.get("/",(request,res)=>{
     );
 });
 
+//Traer los datos de la tabla reseñas
+app.get("/reviews",(request,res)=>{
+
+    database.query('SELECT * FROM resena',
+    (error,result)=>{
+        if(error){
+            console.log(error);
+        }else{
+            res.send(result);
+        }
+    }
+    );
+});
+
 app.listen(5172,()=>{
     console.log("Corriendo en el puerto 5173")
 })

@@ -3,14 +3,26 @@ import ProfileCard from '../Componentes/ProfileCard'
 import './Profile.css'
 import users from "../assets/users.json"
 import Button from '../Componentes/Button'
-import { NavLink } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 
 const ProfileScreen = () => {
+
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.setItem('carnet','');
+    console.log(localStorage.getItem('carnet'));
+    navigate('/');
+  }
+
   return (
     <div className='Profile-card'>
-      <ProfileCard img_perfil={users.imgsrc} username={users.user} email={users.email}/>
-      <NavLink to={"/login"}><Button name={'Cerrar Sesion'}/></NavLink>
+      <ProfileCard img_perfil={users.imgsrc} username={localStorage.getItem('carnet')} email={users.email}/>
+      <Button 
+      name={'Cerrar Sesion'} 
+      funcion={handleLogout}
+      />
     </div>
   )
 }

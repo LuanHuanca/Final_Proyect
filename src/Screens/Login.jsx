@@ -8,7 +8,9 @@ import './Login.css'
 import { useState } from 'react'
 import Validation from '../LoginValidation.js'
 
-const Login = () => {
+const Login = ( {setCi}) => {
+
+
   const [values,setValues] = useState({
     ci:'',
     password:''
@@ -27,13 +29,15 @@ const Login = () => {
       Axios.post('http://localhost:5172/login',values)
       .then(res => {
         if(res.data == "Success"){
-          navigate('/');
+          navigate('/Profile');
+          localStorage.setItem('carnet',[values.ci]);
+          setCi(localStorage.getItem('carnet'));
+          console.log(localStorage.getItem('carnet'));
         }else{
           alert("No record Existed");
         }
       })
       .catch(err => console.log(err));
-        
     }
   }
   return (

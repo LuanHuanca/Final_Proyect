@@ -1,4 +1,4 @@
-import React from 'react'
+import React  from 'react'
 import './index.css'
 import ReactDOM from 'react-dom/client'
 import NotFound from './Screens/NotFound.jsx'
@@ -23,8 +23,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ImageHeader/>
     <BrowserRouter>
-      <Routes>
-        <Route  path='/login' element={<Login/>}  />
+      <Routes>  
+        <Route  path='/Profile' element={<App/>}  />
         <Route  path='/register' element={<Register/>}  />
         <Route  path='*' element={<NotFound />}  />
         <Route  path='/' element={<Home/>}/>
@@ -33,7 +33,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route  path='/special/confirm' element={<SpecialConfirm/>}/>
         <Route  path='/reserved' element={<Reserve/>}/>
         <Route  path='/reviews' element={<Reviews/>}/>
-        <Route  path='/profile' element={<Profile/>}/>
         <Route  path='/general/reserve' element={<GeneralReserve/>}/>
         <Route  path='/general/details' element={<GeneralDetails/>}/>
         <Route  path='/general/confirm' element={<GeneralConfirm/>}/>
