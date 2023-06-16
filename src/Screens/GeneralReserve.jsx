@@ -27,8 +27,10 @@ const GeneralReserve = () => {
           </div>
 
           <div className='general-slider'>
-            <img src="https://www.boliviaentusmanos.com/amarillas1/businesscard/imagenes/lu_qing_9.jpg"></img>
-            <img src="https://www.boliviaentusmanos.com/amarillas1/businesscard/imagenes/lu_qing_11.jpg"></img>
+           <img src="../static/image/ambiente/ambiente_1.jpg" alt="" /> 
+           <img src="../static/image/ambiente/ambiente_2.jpg" alt="" /> 
+           <img src="../static/image/ambiente/ambiente_3.jpg" alt="" /> 
+           <img src="../static/image/ambiente/ambiente_4.jpg" alt="" /> 
           </div>
         
           <Button name="Aceptar" funcion={segundaFaseGeneral}/>
