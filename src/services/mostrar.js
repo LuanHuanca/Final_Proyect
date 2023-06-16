@@ -55,3 +55,13 @@ export function reservar(){
   document.getElementById('con-reserva').style.display = "block";
 }
 
+
+export function edit(){
+  document.getElementById('reserve').style.display = "none";
+  document.getElementById('edit').style.display = "block";
+}
+
+export function reserve(){
+  document.getElementById('reserve').style.display = "block";
+  document.getElementById('edit').style.display = "none";
+}

@@ -5,23 +5,43 @@ import Button from '../Componentes/Button'
 import './Reserve.css'
 import InputContainer from '../Componentes/InputContainer'
 import ReserveCard from '../Componentes/ReserveCard'
-import { reservar } from '../services/mostrar'
+import { edit, reserve } from '../services/mostrar'
+import reserved from "../assets/reserve.json"
 
 const Reserve = () => {
   return (
-    <div className='reserve-container'>
-      <div className='before-reserve' id='sin-reserva'>
-        <p>No tiene reservas hechas</p>
-{/*         <NavLink to={"/"}><Button name="Reservar" funcion={()=>{}}/></NavLink>
- */}        <Button name="Reservar" funcion={reservar}/>
-      </div> 
-
-      <div className="post-reserve" id='con-reserva'>
+    <div className='reserve-container' >
+      <div className="reserve" id='reserve'>
         <State state="Confirmacion" funcion={()=>{}}/>
-        <ReserveCard cliente={"Josu"} tipo={"General"} ambiente={"1"} fecha={"16/06/2023"} hora={"14:00 pm"} cantidad={"1"}/>
-        <Button name={"Editar"} funcion={()=>{}}></Button>
-        <Button name={"Confirmar"} funcion={()=>{}}></Button>
+        <ReserveCard 
+          cliente={"Josu"} 
+          tipo={reserved.tipo} 
+          ambiente={reserved.ambiente} 
+          fecha={reserved.fecha} 
+          hora={reserved.hora} 
+          cantidad={reserved.cantidad} 
+          code={"123cod"} 
+          estado={"pendiente"} 
+          color={"red"} 
+          key={reserved.id}
+        />
+        <Button name={"Editar"} funcion={edit}></Button>
+        <NavLink to={"/reserved"}><Button name={"Confirmar"} funcion={()=>{}}></Button></NavLink>
+        <NavLink to={"/unreserved"}><Button name={"Cancelar"} funcion={()=>{}}></Button></NavLink>
       </div>
+
+      <div className="edit" id='edit'>
+        <div className="details">
+          <InputContainer title={"Hora"} type={"time"} shadow={""}/>
+          <InputContainer title={"Fecha"} type={"date"} shadow={""}/>
+          <InputContainer title={"Ambiente"} type={"number"} shadow={""}/>
+          <InputContainer title={"Cantidad de Personas"} type={"number"} shadow={""}/>
+        </div>
+        
+        <Button name={"Cancelar"} funcion={reserve}/>
+        <Button name={"Confirmar"} funcion={reserve}/>
+      </div>
+
     </div>
   )
 }

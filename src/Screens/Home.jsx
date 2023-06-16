@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Button from '../Componentes/Button'
 import { NavLink } from 'react-router-dom'
 import "./Home.css"
@@ -7,9 +7,23 @@ import DishCard from '../Componentes/DishCard'
 import dishes from "../assets/dishes.json"
 import { Icon } from '@iconify/react'
 import { mostrarMenu, mostrarUbicacion, mostrarContactos } from '../services/mostrar'
+import Axios from 'axios';
 
 
 const Home = () => {
+
+  const [menu,setMenu] = useState([]);
+
+  const get_menu = ()=>{
+    Axios.get("http://localhost:5172/").then((response)=>{
+      setMenu(response.data);
+    });
+  }
+
+  useEffect(()=>{
+    get_menu();
+  })
+
   return (
     <div className='home-container'>
       <p>SELECCIONE SU TIPO DE RESERVA</p>
@@ -24,10 +38,10 @@ const Home = () => {
 
       <div className="menu" id='menu'>
         {
-        dishes.map((dish) => {
-            return <DishCard imgsrc={dish.imgsrc} title={dish.title} description={dish.description} price={dish.price} key={dish.id}/>
+        menu.map((valor,key) => {
+            return <DishCard  title={valor.nombre} description={valor.descripcion} price={valor.precio} key={key}/>
         })
-      }
+        }
       </div>
 
       <div className="ubicacion" id='ubicacion'>

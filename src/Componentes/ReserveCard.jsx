@@ -1,10 +1,10 @@
 import React from 'react'
 import "./ReserveCard.css"
 
-const ReserveCard = ({cliente, tipo, ambiente, fecha, hora, cantidad}) => {
+const ReserveCard = ({cliente, tipo, ambiente, fecha, hora, cantidad, code, estado, color}) => {
   return (
     <div className='reservecard-container'>
-        <div className="reserve-header">
+        <div className="reserve-header" style={{backgroundColor: color}}>
             <span>Reserva</span>
         </div>
 
@@ -17,8 +17,8 @@ const ReserveCard = ({cliente, tipo, ambiente, fecha, hora, cantidad}) => {
             <p><span>Fecha: </span>{fecha}</p>
             <p><span>Hora: </span>{hora}</p>
             <p><span>Cantidad de Personas: </span>{cantidad}</p>
-            <p><span>Codigo Mesa: </span>sdgdsg234</p>
-            <p><span>Estado: </span>Pendiente</p>
+            <p><span>Codigo Mesa: </span>{code}</p>
+            <p><span>Estado: </span>{estado}</p>
         </div>
     </div>
   )

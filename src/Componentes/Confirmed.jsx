@@ -8,7 +8,7 @@ const Confirmed = () => {
   return (
     <div className="confirmed-container" id='confirmed'>
       <span>Reserva realizada exitosamente</span>
-      <NavLink to={"/"}><Button name={"Volver"} funcion={reservar}/></NavLink>
+      <NavLink to={"/"}><Button name={"Volver"} funcion={()=>{}}/></NavLink>
     </div>
   )
 }
