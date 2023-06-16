@@ -38,6 +38,15 @@
     position: relative;
     font-weight: 500;
     bottom: 0px;
-    left: -25px;
+    left: 0px;
     padding-bottom: 10px;
+}
+
+.qualification{
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 5px;
+    top: 5px;
 }

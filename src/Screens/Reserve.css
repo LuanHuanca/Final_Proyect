@@ -1,7 +1,15 @@
-.reserved-container{
-    margin: 10px;
-    height: 80%;
-    display: block;
-    align-items: center;
+.reserve-container{
+    overflow-y: scroll;
+    height: 620px;
+}
+
+
+.edit{
+    display: none;
+    
+}
+
+.details{
+    height: 400px;
     overflow-y: scroll;
 }

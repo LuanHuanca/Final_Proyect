@@ -1,9 +1,14 @@
-.reserve-container{
-    text-align: center;
-    
+.special-reserve-header{
+    display: flex;
 }
-.reserve-container select{
-    background-color: #A93528;
+
+.special-reserve-type-event{
+    text-align: center;
+    height: 300px;
+}
+
+.special-reserve-type-event select{
+    background-color: #28a933;
     margin: 5px;
     text-align: center;
     width: 50%;
@@ -11,15 +16,29 @@
     font-size: 16px;
 }
 
-.reserve-container select option{
+.special-reserve-type-event select option{
     background-color: #D9D9D9;
 }
 
-.reserve-header{
-    display: flex;
+
+.special-reserve-type-event img{
+    margin: 5px;
 }
 
-div img{
+.special-reserve-details {
+    margin: 10px;
+    height: 300px;
+    align-items: center;
+    display: none;
+}
+.special-reserve-details input{
+    width: 80%;
+    height: 30px;
+    margin: 7px;
+}
+
+.special-reserve-details span{
+    width: 10%;
+    font-size: 25px;
     margin: 5px;
-    width: 95%;  
 }

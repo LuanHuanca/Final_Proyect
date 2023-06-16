@@ -1,0 +1,49 @@
+.dishcard-container{
+    width: 95%;
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: flex;
+    margin: 10px;
+    padding-bottom: 7px;
+    border: 2px solid rgb(255, 144, 0);
+}
+
+.dishcard-container img{
+    height: 70px;
+    width: 110px;
+    margin: 20px;
+}
+
+.description{
+    margin-top: 12px;
+    display: grid;
+    width: 100%;
+}
+
+.description p{
+    display: grid;
+    align-items: center;
+    font-size: 16px;
+    height: auto;
+    margin: 0px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.description span{
+    padding-left: 30px;
+    padding-bottom: 20px;
+    line-height: 22px;
+}
+
+.price{
+    position: absolute;
+    right: 0px;
+    bottom: 4%;
+    background-color: #A93528;
+    color: #FFFFFF;
+    padding: 3px 7px;
+    border-radius: 5px;
+    height: 0px;
+}

@@ -1,14 +1,12 @@
 .state-container{
-    background-color: #D9D9D9;
-    color: #000000;
+    background-color: #ff5050;
     margin: 5px;
-    border-color: #000000;
     width: 95%;
-    height: 65px;
-    font-size: 17px;
-    text-align: center;
-    border: 1px solid #000;
+    height: 35px;
+    font-size: 19px;
+    border: 2px solid #000;
+    border-radius: 20px;
     display: grid;
     place-items: center;
-
+    color: aliceblue;
 }

@@ -1,0 +1,9 @@
+{
+    "id": 1,
+    "cliente": "Josu",
+    "tipo":"General",
+    "ambiente": 1,
+    "fecha": "16/06/2023",
+    "hora": "14:00 pm" ,
+    "cantidad": "1"
+}
