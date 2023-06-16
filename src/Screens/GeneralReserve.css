@@ -19,9 +19,28 @@
     display: flex;
 }
 
-.general-envi-slider{
-    width: 100%;
+.general-slider{
+    height: 200px;
     display: flex;
     overflow-x: scroll;
     justify-content: space-between;
+    margin: 10px;
+}
+
+.general-reserve-details {
+    margin: 10px;
+    height: 70%;
+    align-items: center;
+    display: none;
+}
+.general-reserve-details input{
+    width: 80%;
+    height: 30px;
+    margin: 7px;
+}
+
+.general-reserve-details span{
+    width: 10%;
+    font-size: 25px;
+    margin: 5px;
 }

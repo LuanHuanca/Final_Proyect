@@ -27,8 +27,8 @@ const Home = () => {
   return (
     <div className='home-container'>
       <p>SELECCIONE SU TIPO DE RESERVA</p>
-      <NavLink to={"/special/reserve"}><Button name="Especial"/></NavLink>
-      <NavLink to={"/general/reserve"}><Button name="General"/></NavLink>
+      <NavLink to={"/special/reserve"}><Button name="Especial" funcion={()=>{}}/></NavLink>
+      <NavLink to={"/general/reserve"}><Button name="General" funcion={()=>{}}/></NavLink>
 
       <div className='options-bar'>
         <State state="Menu" funcion={mostrarMenu}/>
@@ -46,7 +46,7 @@ const Home = () => {
 
       <div className="ubicacion" id='ubicacion'>
         <img src="../static/image/Mapa.jpg" alt="" />
-        <a href="https://goo.gl/maps/wQv363EdA8Hw3oNP8"><span to={"https://goo.gl/maps/wQv363EdA8Hw3oNP8"}>Av. Arce #2549, La Paz, Bolivia</span></a>
+        <a href="https://goo.gl/maps/wQv363EdA8Hw3oNP8"><span>Av. Arce #2549, La Paz, Bolivia</span></a>
       </div> 
 
       <div className="contactos" id='contactos'>

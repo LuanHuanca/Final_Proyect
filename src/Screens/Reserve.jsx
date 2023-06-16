@@ -4,24 +4,23 @@ import { NavLink } from 'react-router-dom'
 import Button from '../Componentes/Button'
 import './Reserve.css'
 import InputContainer from '../Componentes/InputContainer'
+import ReserveCard from '../Componentes/ReserveCard'
+import { reservar } from '../services/mostrar'
 
 const Reserve = () => {
   return (
     <div className='reserve-container'>
-      {/* <div className='before-reserve'>
+      <div className='before-reserve' id='sin-reserva'>
         <p>No tiene reservas hechas</p>
-        <NavLink to={"/"}><Button name="Reservar"/></NavLink>
-      </div> */}
+{/*         <NavLink to={"/"}><Button name="Reservar" funcion={()=>{}}/></NavLink>
+ */}        <Button name="Reservar" funcion={reservar}/>
+      </div> 
 
-      <div className="post-re">
-        <State state="Confirmacion"/>
-        <InputContainer title={"Cantidad de Personas"} type={"number"} shadow={"6"}/>
-        <InputContainer title={"Tipo de evento"} type={"text"} shadow={"Normal"}/>
-        <InputContainer title={"Ambiente"} type={"number"} shadow={"Ambiente 1"}/>
-        <InputContainer title={"Hora"} type={"time"} shadow={"12:00 p.m."}/>
-        <InputContainer title={"Fecha"} type={"date"} shadow={"13/06/2023"}/>
-        <Button name={"Editar"} ></Button>
-        <Button name={"Confirmar"}></Button>
+      <div className="post-reserve" id='con-reserva'>
+        <State state="Confirmacion" funcion={()=>{}}/>
+        <ReserveCard cliente={"Josu"} tipo={"General"} ambiente={"1"} fecha={"16/06/2023"} hora={"14:00 pm"} cantidad={"1"}/>
+        <Button name={"Editar"} funcion={()=>{}}></Button>
+        <Button name={"Confirmar"} funcion={()=>{}}></Button>
       </div>
     </div>
   )

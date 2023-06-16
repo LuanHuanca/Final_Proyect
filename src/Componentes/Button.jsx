@@ -1,7 +1,7 @@
 import React from 'react'
 import './Button.css'
 
-const Button = ({name,funcion,tipo}) => {
+const Button = ({name,funcion,tipo, funcion}) => {
   return (
     <div className='button-container'>
         <button 

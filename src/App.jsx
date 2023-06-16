@@ -1,11 +1,9 @@
-import React, { useState } from 'react'
-import Login from './Screens/Login';
-import Profile from './Screens/Profile'
-import Home from './Screens/Home';
-function App() {
-  return(
-    <div>
+import React from 'react'
 
+function App() {
+  return (
+    <div className='App'>
+      
     </div>
   )
 }
