@@ -11,14 +11,13 @@ const ProfileScreen = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    localStorage.setItem('carnet','');
-    console.log(localStorage.getItem('carnet'));
+    localStorage.setItem('username','');
     navigate('/');
   }
 
   return (
     <div className='Profile-card'>
-      <ProfileCard img_perfil={users.imgsrc} username={localStorage.getItem('carnet')} email={users.email}/>
+      <ProfileCard img_perfil={users.imgsrc} username={localStorage.getItem('username')} email={users.email}/>
       <Button 
       name={'Cerrar Sesion'} 
       funcion={handleLogout}

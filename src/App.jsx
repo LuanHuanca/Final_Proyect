@@ -3,20 +3,9 @@ import Login from './Screens/Login';
 import Profile from './Screens/Profile'
 import Home from './Screens/Home';
 function App() {
+  return(
+    <div>
 
-
-
-const [ci,setCi] = useState([]);
-
-
-
-  return (
-    <div className='App'>
-      {
-        !localStorage.getItem('carnet').length > 0
-          ?<Login setCi={setCi}/>
-          :<Profile ci={ci} setCi={setCi}/>
-      }
     </div>
   )
 }

@@ -6,13 +6,13 @@ import { NavLink, useNavigate } from 'react-router-dom'
 import Axios from 'axios';
 import './Login.css'
 import { useState } from 'react'
-import Validation from '../LoginValidation.js'
+import Validation from '../services/LoginValidation.js'
 
-const Login = ( {setCi}) => {
+const Login = () => {
 
 
   const [values,setValues] = useState({
-    ci:'',
+    username:'',
     password:''
   })
 
@@ -25,14 +25,12 @@ const Login = ( {setCi}) => {
   const handleSubmit = (event) =>{
     event.preventDefault();
     setErrors(Validation(values));
-    if(errors.ci === ""  && errors.password === ""){
+    if(errors.username === ""  && errors.password === ""){
       Axios.post('http://localhost:5172/login',values)
       .then(res => {
         if(res.data == "Success"){
+          localStorage.setItem('username',[values.username]);
           navigate('/Profile');
-          localStorage.setItem('carnet',[values.ci]);
-          setCi(localStorage.getItem('carnet'));
-          console.log(localStorage.getItem('carnet'));
         }else{
           alert("No record Existed");
         }
@@ -43,15 +41,15 @@ const Login = ( {setCi}) => {
   return (
     <div className='box'>
         <form action='' onSubmit={handleSubmit}>
-          <Title title={"INICIO DE SESION"} context={"Inicia sesión con tu cedula de identidad"}/>
+          <Title title={"INICIO DE SESION"} context={"Inicia sesión con tu nombre de usuario"}/>
           <InputContainer 
-          title={"Cedula de identidad"} 
+          title={"Nombre de usuario"} 
           type={"text"}
-          shadow={"12345678"}
-          name='ci'
+          shadow={"JosuGey"}
+          name='username'
           action={handleInput}
           />
-          <span className='text-danger'>{errors.ci}</span>
+          <span className='text-danger'>{errors.username}</span>
           <InputContainer 
           title={"Contraseña"} 
           type={"password"} 

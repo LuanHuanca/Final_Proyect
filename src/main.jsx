@@ -17,14 +17,14 @@ import Profile from './Screens/Profile'
 import GeneralReserve  from './Screens/GeneralReserve.jsx'
 import GeneralDetails  from './Screens/GeneralDetails.jsx'
 import GeneralConfirm from './Screens/GeneralConfirm.jsx'
-import App from './App'
+import ProfileDirection from './Screens/ProfileDirection'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ImageHeader/>
     <BrowserRouter>
       <Routes>  
-        <Route  path='/Profile' element={<App/>}  />
+        <Route  path='/Profile' element={<ProfileDirection/>}  />
         <Route  path='/register' element={<Register/>}  />
         <Route  path='*' element={<NotFound />}  />
         <Route  path='/' element={<Home/>}/>

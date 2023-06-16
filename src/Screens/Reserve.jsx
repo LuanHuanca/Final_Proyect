@@ -20,7 +20,7 @@ const Reserve = () => {
         <InputContainer title={"Ambiente"} type={"number"} shadow={"Ambiente 1"}/>
         <InputContainer title={"Hora"} type={"time"} shadow={"12:00 p.m."}/>
         <InputContainer title={"Fecha"} type={"date"} shadow={"13/06/2023"}/>
-        <Button name={"Editar"}  funcion={console.log(localStorage.getItem('carnet'))}></Button>
+        <Button name={"Editar"} ></Button>
         <Button name={"Confirmar"}></Button>
       </div>
     </div>

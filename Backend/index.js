@@ -11,17 +11,17 @@ const database = mysql.createConnection({
     host:"localhost",
     user:"root",
     password:"",
-    database:"db_chifa"
+    database:"db_restaurant"
 });
 
 //Registrar usuarios en la base de datos
 app.post('/register',(req,res)=>{
-    const sql = "INSERT INTO cliente (`id_ci_cliente`,`username`,`contrasena`,`email`) VALUES (?)";
+    const sql = "INSERT INTO cliente (`username`,`contrasena`,`email`,`telefono`) VALUES (?)";
     const values = [
-        req.body.ci,
         req.body.username,
         req.body.password,
-        req.body.email
+        req.body.email,
+        req.body.telefono
     ]
     database.query(sql,[values],(err,data) =>{
         if(err){
@@ -33,8 +33,8 @@ app.post('/register',(req,res)=>{
 
 //Registrar usuarios en la base de datos
 app.post('/login',(req,res)=>{
-    const sql = "SELECT * FROM cliente WHERE `id_ci_cliente` = ? AND `contrasena` = ?";
-    database.query(sql,[req.body.ci,req.body.password],(err,data) =>{
+    const sql = "SELECT * FROM cliente WHERE `username` = ? AND `contrasena` = ?";
+    database.query(sql,[req.body.username,req.body.password],(err,data) =>{
         if(err){
             return res.json("Error");
         }
