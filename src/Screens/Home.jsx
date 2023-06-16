@@ -54,6 +54,7 @@ const Home = () => {
         <div><Icon icon={"ic:baseline-phone"}/><span>2 2424188</span></div>
         <div><Icon icon={"uiw:mail"}/><span>restauranteluquing@gmail.com</span></div>
         <div><Icon icon={"material-symbols:star"}/><span>Calificacion - 3,9 (317 opiniones)</span></div>
+        <img src="../static/image/qr.jpg" alt="" />
       </div>
     </div>
   )
