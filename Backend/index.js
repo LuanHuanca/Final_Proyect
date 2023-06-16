@@ -63,7 +63,7 @@ app.get("/",(request,res)=>{
 //Traer los datos de la tabla reseñas
 app.get("/reviews",(request,res)=>{
 
-    database.query('SELECT * FROM resena',
+    database.query('SELECT RESENA.descripcion, RESENA.fecha, RESENA.puntuacion, CLIENTE.username FROM RESENA INNER JOIN CLIENTE ON RESENA.id_cliente = CLIENTE.id_cliente',
     (error,result)=>{
         if(error){
             console.log(error);
